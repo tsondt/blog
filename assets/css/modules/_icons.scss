@@ -1,0 +1,79 @@
+// =============================================================================
+// Icons
+// =============================================================================
+
+// Settings
+// =============================================================================
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: ionicons;
+  src: url("../fonts/ionicons/ionicons.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/ionicons/ionicons.woff") format("woff"),
+  url("../fonts/ionicons/ionicons.ttf")  format("truetype");
+}
+
+// Component
+// =============================================================================
+
+.icon {
+  display: inline-block;
+  width: 1.1em;
+  font-family: ionicons;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+// Descendant
+// =============================================================================
+
+$ionicons-prefix: icon- !default;
+$ionicon-android-person: "\f3a0";
+$ionicon-at: "\f10f";
+$ionicon-ios-arrow-thin-left: "\f3d5";
+$ionicon-ios-arrow-thin-right: "\f3d6";
+$ionicon-social-bitcoin: "\f2af";
+$ionicon-social-facebook: "\f231";
+$ionicon-social-github: "\f233";
+$ionicon-social-linkedin: "\f239";
+$ionicon-social-rss: "\f23d";
+$ionicon-social-twitter: "\f243";
+$ionicon-social-earth: "\f276";
+
+.#{$ionicons-prefix}about:before {
+  content: $ionicon-android-person;
+}
+.#{$ionicons-prefix}email:before {
+  content: $ionicon-at;
+}
+.#{$ionicons-prefix}arrow-left:before {
+  content: $ionicon-ios-arrow-thin-left;
+}
+.#{$ionicons-prefix}arrow-right:before {
+  content: $ionicon-ios-arrow-thin-right;
+}
+.#{$ionicons-prefix}bitcoin:before {
+  content: $ionicon-social-bitcoin;
+}
+.#{$ionicons-prefix}facebook:before {
+  content: $ionicon-social-facebook;
+}
+.#{$ionicons-prefix}github:before {
+  content: $ionicon-social-github;
+}
+.#{$ionicons-prefix}linkedin:before {
+  content: $ionicon-social-linkedin;
+}
+.#{$ionicons-prefix}rss:before {
+  content: $ionicon-social-rss;
+}
+.#{$ionicons-prefix}twitter:before {
+  content: $ionicon-social-twitter;
+}
+.#{$ionicons-prefix}earth:before {
+  content: $ionicon-social-earth;
+}

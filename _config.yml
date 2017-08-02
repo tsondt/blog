@@ -1,0 +1,50 @@
+name: My stream of consciousness
+url: https://blog.tsondt.com
+paginate: 10
+paginate_path: /posts/page/:num/
+permalink: posts/:slug
+
+ga_id: UA-103691933-2
+scrollappear_enabled: true
+rss_enabled: true
+social:
+  email:
+  website: https://tsondt.com
+  github: https://github.com/tsondt
+  linkedin: https://linkedin.com/in/tsondt
+  bitcoin:
+  twitter: https://twitter.com/tsondt
+  facebook:
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+collections:
+  my_tags:
+    output: true
+    permalink: /tags/:slug/
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: articles_by_tag
+exclude:
+  - "README.md"
+  - "LICENSE"
+  - "Dockerfile"
+  - "*.sh"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "package.json"
+  - "yarn.lock"
+  - "yarn-error.log"
+  - "webpack.config.js"
+  - "src/"
+  - "node_modules/"
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji

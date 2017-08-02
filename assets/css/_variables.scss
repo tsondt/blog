@@ -1,0 +1,74 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+// Typography
+// =============================================================================
+
+$sans-serif: "Lato", Helvetica, Arial, sans-serif;
+$serif: "Cormorant Garamond", Courier, serif;
+$base-font-family: $sans-serif;
+$base-font-weight: 400;
+$base-font-weight-bold: 700;
+
+// Colors
+// =============================================================================
+
+// Brand colors
+
+$brand-success: #1fbf92;
+$brand-danger: #e74b3c;
+$brand-primary: #3449ed;
+$brand-warning: #f1c90b;
+
+// Sizes
+// =============================================================================
+
+// Grid
+
+$columns: 12;
+$max-width: 1024px;
+$gutter: 25px;
+$one-column: 100% / $columns;
+$negative-gutter: 0 - $gutter;
+
+// Font sizes
+html {
+  font-size: 1em !important;
+}
+// @include breakpoint(extra-small) {
+//   html {
+//     font-size: 2vw !important;
+//   }
+// }
+// @include breakpoint(small) {
+//   html {
+//     font-size: 1.75vw !important;
+//   }
+// }
+// @include breakpoint(large) {
+//   html {
+//     font-size: 1.25vw !important;
+//   }
+// }
+// @include breakpoint(extra-large) {
+//   html {
+//     font-size: 1vw !important;
+//   }
+// }
+// @include breakpoint(gigantic) {
+//   html {
+//     font-size: 0.75vw !important;
+//   }
+// }
+$base-font-size: 1em;
+$base-line-height: 1.8;
+
+// Box sizes
+
+$base-border-radius: 4px;
+
+// Effects
+// =============================================================================
+
+$base-transition-speed: .2s;

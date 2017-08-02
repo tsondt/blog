@@ -1,0 +1,42 @@
+// =============================================================================
+// Mixins
+// =============================================================================
+
+// Handling breakpoints for media queries
+// @param {Number} $val the media query specification.
+
+@mixin breakpoint($val) {
+  @if $val == extra-small {
+    @media all and (max-width: 415px) {
+      @content;
+    }
+  } @else if $val == small {
+    @media all and (min-width: 416px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $val == medium {
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  } @else if $val == large {
+    @media all and (min-width: 1024px) and (max-width: 1440px) {
+      @content;
+    }
+  } @else if $val == extra-large {
+    @media all and (min-width: 1441px) and (max-width: 1920px) {
+      @content;
+    }
+  } @else if $val == gigantic {
+    @media all and (min-width: 1921px) {
+      @content;
+    }
+  } @else {
+    @warn "The parameter #{$val} is not valid";
+  }
+}
+// Set box shadow
+@mixin box-shadow($string) {
+	-webkit-box-shadow: $string;
+	-moz-box-shadow: $string;
+	box-shadow: $string;
+}

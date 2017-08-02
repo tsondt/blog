@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "repository": "git@github.com:tsondt/blog.git",
+  "author": "tsondt",
+  "license": "MIT",
+  "dependencies": {
+    "fluidbox": "^2.0.5",
+    "jquery": "^3.2.1",
+    "retinajs": "^2.1.1",
+    "throttle-debounce-fn": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.4.1"
+  }
+}
