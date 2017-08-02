@@ -2,7 +2,7 @@
 layout: post
 title: "Welcome to my blog"
 description: "Hi there, welcome to my blog and thank you for being here."
-tags: []
+tags: [general]
 comments: true
 ---
 
