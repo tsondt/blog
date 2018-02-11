@@ -16,4 +16,4 @@ RUN apt-get update && \
     apt-get autoclean && \
     gem install bundler
 
-CMD bundle check || bundle install && bundle exec jekyll serve --host 0.0.0.0 --port 4000
+ENTRYPOINT ["bundle"]
