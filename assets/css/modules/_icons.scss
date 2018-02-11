@@ -43,6 +43,8 @@ $ionicon-social-linkedin: "\f239";
 $ionicon-social-rss: "\f23d";
 $ionicon-social-twitter: "\f243";
 $ionicon-social-earth: "\f276";
+$ionicon-tag: "\f48f";
+$ionicon-link: "\f1fe";
 
 .#{$ionicons-prefix}about:before {
   content: $ionicon-android-person;
@@ -76,4 +78,10 @@ $ionicon-social-earth: "\f276";
 }
 .#{$ionicons-prefix}earth:before {
   content: $ionicon-social-earth;
+}
+.#{$ionicons-prefix}tag:before {
+  content: $ionicon-tag;
+}
+.#{$ionicons-prefix}link:before {
+  content: $ionicon-link;
 }

@@ -3,13 +3,13 @@
 // =============================================================================
 
 .highlight {
-  padding: 10px 10px;
-  margin: 0;
-  margin: 30px 0;
+  padding: 5px 5px;
+  margin: 5px 0px 15px 0px;
   overflow: auto;
   font-size: $base-font-size * .8;
   font-weight: 400;
   background-color: darken($gray-darkest, 5);
+  border: 1px solid $base-border-color;
   border-radius: $base-border-radius;
   pre {
     margin: 0;
@@ -20,29 +20,34 @@
 
 .highlighter-rouge {
   padding: 2px 4px;
+  margin: 5px 0px 15px 0px;
   font-size: $base-font-size  * .8;
   color: #f92672;
   background: darken($gray-darkest, 5);
   border: 1px solid $base-border-color;
   border-radius: 1px;
+  .highlight {
+    border: none !important;
+    margin: 0 !important;
+  }
 }
 
 // Responsive
 // =============================================================================
 
-@include breakpoint(extra-small) {
-  .highlight {
-    padding: 10px 5px;
-    font-size: $base-font-size * .75;
-  }
-}
-
-@include breakpoint(small) {
-  .highlight {
-    padding: 10px 5px;
-    font-size: $base-font-size * .75;
-  }
-}
+// @include breakpoint(extra-small) {
+//   .highlight {
+//     padding: 5px 5px;
+//     font-size: $base-font-size * .75;
+//   }
+// }
+//
+// @include breakpoint(small) {
+//   .highlight {
+//     padding: 5px 5px;
+//     font-size: $base-font-size * .75;
+//   }
+// }
 
 // Highlighting types
 // =============================================================================
