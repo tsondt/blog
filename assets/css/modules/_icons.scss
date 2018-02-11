@@ -45,6 +45,7 @@ $ionicon-social-twitter: "\f243";
 $ionicon-social-earth: "\f276";
 $ionicon-tag: "\f48f";
 $ionicon-link: "\f1fe";
+$ionicon-book: "\f3e8";
 
 .#{$ionicons-prefix}about:before {
   content: $ionicon-android-person;
@@ -84,4 +85,7 @@ $ionicon-link: "\f1fe";
 }
 .#{$ionicons-prefix}link:before {
   content: $ionicon-link;
+}
+.#{$ionicons-prefix}book:before {
+  content: $ionicon-book;
 }
