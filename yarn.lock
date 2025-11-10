@@ -1245,8 +1245,8 @@ fstream-ignore@^1.0.5:
     minimatch "^3.0.0"
 
 fstream@^1.0.0, fstream@^1.0.10, fstream@^1.0.2:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.11.tgz#5c1fb1f117477114f0632a0eb4b71b3cb0fd3171"
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.12.tgz#4e8ba8ee2d48be4f7d0de505455548eae5932045"
   dependencies:
     graceful-fs "^4.1.2"
     inherits "~2.0.0"
@@ -2433,10 +2433,6 @@ throttle-debounce-fn@^1.0.1:
   resolved "https://registry.yarnpkg.com/throttle-debounce-fn/-/throttle-debounce-fn-1.0.1.tgz#baa530496a5fb567ab7bb373ea0778b9db962492"
   dependencies:
     jquery ">=1.4.0"
-
-throttle-debounce@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/throttle-debounce/-/throttle-debounce-1.0.1.tgz#dad0fe130f9daf3719fdea33dc36a8e6ba7f30b5"
 
 timers-browserify@^2.0.2:
   version "2.0.3"
