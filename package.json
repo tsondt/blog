@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "fluidbox": "^2.0.5",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "retinajs": "^2.1.1",
     "throttle-debounce-fn": "^1.0.1"
   },
