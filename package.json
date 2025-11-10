@@ -7,13 +7,14 @@
   "dependencies": {
     "fluidbox": "^2.0.5",
     "jquery": "^3.2.1",
-    "retinajs": "^2.1.1",
-    "throttle-debounce-fn": "^1.0.1"
+    "retinajs": "^2.1.1"
   },
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.1",
-    "babel-preset-env": "^1.6.0",
-    "webpack": "^3.4.1"
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "babel-loader": "^10.0.0",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
   }
 }

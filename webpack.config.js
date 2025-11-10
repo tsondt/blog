@@ -1,11 +1,11 @@
 const path = require('path');
-const webpack = require('webpack');
+const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
   context: path.resolve(__dirname, './src'),
+  mode: 'production',
   entry: {
     vendor: [
       'jquery/src/jquery',
-      'throttle-debounce-fn/src/throttle-debounce-fn',
       'fluidbox',
       'retinajs'
     ],
@@ -18,17 +18,24 @@ module.exports = {
     path: path.resolve(__dirname, './assets/javascripts'),
     filename: '[name].js'
   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({minimize: true})
-  ],
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false
+      })
+    ]
+  },
   module: {
     rules: [
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
+            targets: 'defaults',
+            presets: ['@babel/preset-env']
           }
         }
       }
