@@ -3,7 +3,6 @@ url: https://blog.tsondt.com
 paginate: 10
 paginate_path: /posts/page/:num/
 permalink: posts/:slug
-
 ga_id: UA-103691933-2
 scrollappear_enabled: true
 rss_enabled: true
@@ -16,11 +15,9 @@ social:
   wiki: https://wiki.tsondt.com
   bitcoin:
   facebook:
-
 sass:
   sass_dir: assets/css
   style: compressed
-
 collections:
   my_tags:
     output: true
@@ -40,12 +37,11 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
   - "package.json"
-  - "yarn.lock"
-  - "yarn-error.log"
+  - "package-lock.json"
   - "webpack.config.js"
   - "src/"
   - "node_modules/"
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
