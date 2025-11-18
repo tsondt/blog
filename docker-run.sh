@@ -2,7 +2,7 @@
 
 CONTAINER_NAME="tsondt/blog"
 CONTAINER_PORT=4000
-ARGS="${CONTAINER_PORT} "$@"
+ARGS="${CONTAINER_PORT}"
 
 usage () {
     echo "Usage:"

@@ -1,0 +1,71 @@
+// =============================================================================
+// Light theme
+// =============================================================================
+
+// Variables
+// =============================================================================
+
+// Shades of gray
+
+$white: #ffffff;
+$gray-lightest: #f5f7fa;
+$gray-lighter: #e8ecf2;
+$gray-light: #d5dbe5;
+$gray: #a3acbd;
+$gray-dark: #6a7488;
+$gray-darker: #3e4657;
+$gray-darkest: #1f2735;
+$black: #000000;
+
+// Font colors
+
+$base-font-color: $gray-darkest;
+$base-accent-color: $gray-darker;
+$base-accent-highlighted-color: lighten($base-accent-color, 12);
+
+// Border color
+
+$base-border-color: $gray-light;
+
+// Page specific colors
+
+$body-background: $gray-lightest;
+$grid-background: $gray-lightest;
+$header-logo-color: $gray-darkest;
+$header-link-color: $gray-darker;
+$header-link-color-hover: $gray-darkest;
+$article-header-title-color: $gray-darkest;
+$article-header-description-color: $gray-dark;
+$article-post-titles-color: $gray-darkest;
+$article-footer-color: $gray-dark;
+$article-footer-link-color: $gray-darker;
+$article-footer-link-color-hover: $gray-darkest;
+$article-paginator-color-hover: $gray-darkest;
+
+// Imports
+// =============================================================================
+
+// Vendors
+
+@import "vendor/normalize";
+@import "vendor/fluidbox";
+
+// Settings
+
+@import "mixins";
+@import "variables";
+@import "base";
+
+// Layouts
+@import "layouts/grid";
+@import "layouts/footer";
+
+// Modules
+
+@import "modules/about";
+@import "modules/articles";
+@import "modules/embed";
+@import "modules/header";
+@import "modules/highlights";
+@import "modules/icons";
+@import "modules/scrollappear";

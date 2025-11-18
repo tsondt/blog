@@ -43,10 +43,10 @@
         </a>
       </li>
     {% endif %}
-    {% if site.social.twitter %}
+    {% if site.social.x %}
       <li>
-        <a href="{{ site.social.twitter }}" rel="noreferrer noopener" target="_blank" title="Twitter">
-          <span class="icon icon-twitter"></span>
+        <a href="{{ site.social.x }}" rel="noreferrer noopener" target="_blank" title="X">
+          <span class="icon icon-x"></span>
         </a>
       </li>
     {% endif %}
@@ -71,5 +71,11 @@
         </a>
       </li>
     {% endif %}
+    <li>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+        <span class="icon icon-moon" aria-hidden="true"></span>
+        <span class="icon icon-sun" aria-hidden="true"></span>
+      </button>
+    </li>
   </ul>
 </nav>

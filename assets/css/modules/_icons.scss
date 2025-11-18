@@ -41,11 +41,13 @@ $ionicon-social-facebook: "\f231";
 $ionicon-social-github: "\f233";
 $ionicon-social-linkedin: "\f239";
 $ionicon-social-rss: "\f23d";
-$ionicon-social-twitter: "\f243";
+$ionicon-social-x: "\f243";
 $ionicon-social-earth: "\f276";
 $ionicon-tag: "\f48f";
 $ionicon-link: "\f1fe";
 $ionicon-book: "\f3e8";
+$ionicon-ios-moon: "\f468";
+$ionicon-ios-sunny: "\f4b6";
 
 .#{$ionicons-prefix}about:before {
   content: $ionicon-android-person;
@@ -74,8 +76,8 @@ $ionicon-book: "\f3e8";
 .#{$ionicons-prefix}rss:before {
   content: $ionicon-social-rss;
 }
-.#{$ionicons-prefix}twitter:before {
-  content: $ionicon-social-twitter;
+.#{$ionicons-prefix}x:before {
+  content: $ionicon-social-x;
 }
 .#{$ionicons-prefix}earth:before {
   content: $ionicon-social-earth;
@@ -88,4 +90,10 @@ $ionicon-book: "\f3e8";
 }
 .#{$ionicons-prefix}book:before {
   content: $ionicon-book;
+}
+.#{$ionicons-prefix}moon:before {
+  content: $ionicon-ios-moon;
+}
+.#{$ionicons-prefix}sun:before {
+  content: $ionicon-ios-sunny;
 }

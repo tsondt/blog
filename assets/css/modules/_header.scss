@@ -36,6 +36,48 @@
         color: $header-link-color-hover;
       }
     }
+    .theme-toggle {
+      width: 36px;
+      height: 36px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      outline: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: $header-link-color;
+      transition: color $base-transition-speed linear, border-color $base-transition-speed linear, background $base-transition-speed linear;
+      &:focus-visible {
+        outline: 2px solid $base-accent-color;
+        outline-offset: 3px;
+      }
+      &:hover,
+      &:focus-visible {
+        color: $header-link-color-hover;
+        border-color: $header-link-color-hover;
+      }
+      .icon {
+        font-size: 20px;
+        line-height: 1;
+        display: none;
+      }
+      .icon-moon {
+        display: inline-block;
+      }
+      &.is-light {
+        color: $header-link-color-hover;
+        border-color: $header-link-color-hover;
+        background: $grid-background;
+        .icon-moon {
+          display: none;
+        }
+        .icon-sun {
+          display: inline-block;
+        }
+      }
+    }
   }
 }
 
